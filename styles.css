@@ -1,130 +1,59 @@
-/* Estilos generales */
+:root {
+    --neon-green: #39FF14;
+    --lab-blue: #00f3ff;
+    --hologram-purple: #bc13fe;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background: #0a0a0a;
+    color: var(--neon-green);
+    font-family: 'Exo 2', sans-serif;
+    overflow-x: hidden;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
+.holographic-title {
+    font-size: 4rem;
+    text-shadow: 0 0 10px var(--lab-blue),
+                 0 0 20px var(--lab-blue),
+                 0 0 30px var(--hologram-purple);
+    animation: hologram-pulse 2s infinite;
 }
 
-header {
-    background-color: #007BFF;
-    color: white;
-    padding: 60px 0;
-    text-align: center;
+@keyframes dna-animation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+.hologram-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--neon-green);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-header p {
-    font-size: 1.2rem;
+.hologram-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px var(--hologram-purple);
 }
 
-section {
-    padding: 40px 0;
-}
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-p {
-    line-height: 1.6;
-    text-align: justify;
-}
-
-/* Estilos del portafolio */
-.portfolio-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.portfolio-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.portfolio-item:hover {
-    transform: scale(1.05);
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.portfolio-item h3 {
-    font-size: 1.5rem;
-    margin: 15px 0;
-}
-
-.portfolio-item p {
-    padding: 0 15px 15px;
-}
-
-/* Estilos del formulario de contacto */
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-#contact-form label {
-    font-weight: bold;
-}
-
-#contact-form input, #contact-form textarea {
+.terminal-input {
+    background: #001900;
+    border: 1px solid var(--neon-green);
+    color: var(--neon-green);
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 1rem;
+    font-family: 'Source Code Pro', monospace;
 }
 
-#contact-form button {
-    background-color: #007BFF;
+.execute-button {
+    background: linear-gradient(45deg, #003300, #00cc00);
+    border: 1px solid var(--neon-green);
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
+    padding: 15px 30px;
     cursor: pointer;
-    font-size: 1rem;
+    transition: text-shadow 0.3s;
 }
 
-#contact-form button:hover {
-    background-color: #0056b3;
-}
-
-/* Estilos del footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
+.execute-button:hover {
+    text-shadow: 0 0 10px var(--neon-green);
 }
