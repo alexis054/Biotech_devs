@@ -21,7 +21,6 @@
             <ul class="nav-links">
                 <li><a href="#about">Sobre Nosotros</a></li>
                 <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#projects">Proyectos</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </div>
@@ -51,17 +50,17 @@
         <div class="container">
             <h2 data-aos="fade-up">Nuestras Habilidades</h2>
             <div class="skills-grid">
-                <div class="skill-card" data-aos="zoom-in">
+                <div class="skill-card" data-category="hardware" data-aos="zoom-in">
                     <i class="fas fa-microchip"></i>
                     <h3>Hardware Embebido</h3>
                     <p>ESP32, Raspberry Pi, Arduino.</p>
                 </div>
-                <div class="skill-card" data-aos="zoom-in">
+                <div class="skill-card" data-category="software" data-aos="zoom-in">
                     <i class="fas fa-code"></i>
                     <h3>Desarrollo de Software</h3>
                     <p>Python, C++, Java, Node.js.</p>
                 </div>
-                <div class="skill-card" data-aos="zoom-in">
+                <div class="skill-card" data-category="prototipado" data-aos="zoom-in">
                     <i class="fas fa-cube"></i>
                     <h3>Prototipado 3D</h3>
                     <p>Diseño, simulación e impresión.</p>
@@ -70,20 +69,36 @@
         </div>
     </section>
 
-    <!-- Proyectos -->
-    <section id="projects" class="projects-section">
+    <!-- Proyectos Dinámicos (oculto inicialmente) -->
+    <section id="projects" class="projects-section" style="display: none;">
         <div class="container">
-            <h2 data-aos="fade-up">Proyectos Destacados</h2>
+            <button class="btn-back" onclick="hideProjects()">← Volver</button>
+            <h2>Proyectos Relacionados</h2>
             <div class="projects-grid">
-                <div class="project-card" data-aos="fade-up">
-                    <img src="assets/images/project1.jpg" alt="Proyecto 1">
-                    <h3>Monitoreo Biométrico</h3>
-                    <p>Sistema de monitoreo en tiempo real con ESP32.</p>
+                <!-- Proyectos de Hardware -->
+                <div class="project-card" data-category="hardware">
+                    <img src="assets/images/hardware1.jpg" alt="Sistema IoT">
+                    <h3>Sistema IoT Industrial</h3>
+                    <p>Control remoto con ESP32 y sensores personalizados.</p>
                 </div>
-                <div class="project-card" data-aos="fade-up">
-                    <img src="assets/images/project2.jpg" alt="Proyecto 2">
-                    <h3>Análisis de Señales</h3>
-                    <p>Software para análisis de datos biomédicos.</p>
+                <div class="project-card" data-category="hardware">
+                    <img src="assets/images/hardware2.jpg" alt="Robot Autónomo">
+                    <h3>Robot de Monitoreo</h3>
+                    <p>Plataforma robótica basada en Raspberry Pi.</p>
+                </div>
+
+                <!-- Proyectos de Software -->
+                <div class="project-card" data-category="software">
+                    <img src="assets/images/software1.jpg" alt="Análisis de Datos">
+                    <h3>Plataforma de Analytics</h3>
+                    <p>Sistema de análisis biométrico en Python.</p>
+                </div>
+
+                <!-- Proyectos de Prototipado -->
+                <div class="project-card" data-category="prototipado">
+                    <img src="assets/images/3d1.jpg" alt="Prótesis 3D">
+                    <h3>Prótesis Personalizada</h3>
+                    <p>Diseño e impresión 3D de prótesis médica.</p>
                 </div>
             </div>
         </div>
