@@ -3,73 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biotech Devs</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Biotech Devs | Soluciones Bio-Tecnológicas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Biotech Devs</h1>
-            <p>Innovando con electrónica, programación y diseño 3D</p>
-        </div>
-    </header>
+    <!-- Fondo dinámico con conexiones neuronales -->
+    <div class="neural-background"></div>
 
-    <section id="about">
-        <div class="container">
-            <h2>Sobre Nosotros</h2>
-            <p>
-                Somos un equipo de Bioingenieros apasionados por la electrónica y la programación, con experiencia en el desarrollo de proyectos de hardware y software.
-            </p>
-            <p>
-                Contamos con sólidos conocimientos en electrónica analógica, análisis de señales, desarrollo web y web scraping con Selenium, lo que nos permite diseñar soluciones innovadoras e integrales. Además, tenemos experiencia en modelado e impresión 3D, facilitando la creación de prototipos funcionales, y en el desarrollo de proyectos en MATLAB para análisis y simulaciones avanzadas.
-            </p>
+    <!-- Navegación flotante -->
+    <nav class="hologram-nav">
+        <ul>
+            <li><a href="#hero" class="nav-glow">Inicio</a></li>
+            <li><a href="#skills" class="nav-glow">Habilidades</a></li>
+            <li><a href="#projects" class="nav-glow">Proyectos</a></li>
+            <li><a href="#contact" class="nav-glow">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Hero con efecto de laboratorio -->
+    <section id="hero" class="lab-hero">
+        <div class="dna-container" data-aos="dna-animation">
+            <div class="dna-strand"></div>
+            <h1 class="holographic-title">BIOTECH DEVS</h1>
+            <p class="molecule-subtitle">Innovación en cada código</p>
         </div>
     </section>
 
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portafolio</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="assets/images/project1.jpg" alt="Proyecto 1">
-                    <h3>Proyecto 1</h3>
-                    <p>Descripción breve del proyecto.</p>
+    <!-- Tarjetas de habilidades con efecto de interfaz holográfica -->
+    <section id="skills" class="hologram-section">
+        <div class="grid-skills">
+            <div class="hologram-card" data-aos="zoom-in">
+                <div class="card-content">
+                    <i class="fas fa-dna"></i>
+                    <h3>Bioingeniería</h3>
+                    <ul class="tech-list">
+                        <li>Análisis de señales</li>
+                        <li>MATLAB</li>
+                        <li>Simulaciones</li>
+                    </ul>
                 </div>
-                <div class="portfolio-item">
-                    <img src="assets/images/project2.jpg" alt="Proyecto 2">
-                    <h3>Proyecto 2</h3>
-                    <p>Descripción breve del proyecto.</p>
+            </div>
+            <!-- Repetir para otras tarjetas -->
+        </div>
+    </section>
+
+    <!-- Portafolio interactivo con efecto de microscopio -->
+    <section id="projects" class="microscope-section">
+        <h2 data-aos="fade-up">Nuestros desarrollos</h2>
+        <div class="project-slider">
+            <div class="slide" data-project="1">
+                <div class="project-details">
+                    <h3>Sistema de monitoreo biométrico</h3>
+                    <p>ESP32 + Machine Learning</p>
+                    <button class="holo-button">Ver caso de estudio</button>
                 </div>
-                <!-- Agrega más proyectos aquí -->
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contacto</h2>
-            <form id="contact-form">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Enviar</button>
+    <!-- Formulario de contacto estilo terminal -->
+    <section id="contact" class="terminal-section">
+        <div class="console-container" data-aos="fade-up">
+            <div class="terminal-header">
+                <span class="blinking-cursor">>_</span>
+                <h2>contacto@biotechdevs.com</h2>
+            </div>
+            <form id="contactForm" class="terminal-form">
+                <div class="input-line">
+                    <span class="prompt">$</span>
+                    <input type="text" placeholder="Nombre" class="terminal-input">
+                </div>
+                <div class="input-line">
+                    <span class="prompt">$</span>
+                    <input type="email" placeholder="Email" class="terminal-input">
+                </div>
+                <div class="input-line">
+                    <span class="prompt">$</span>
+                    <textarea placeholder="Mensaje" class="terminal-textarea"></textarea>
+                </div>
+                <button type="submit" class="execute-button">Ejecutar</button>
             </form>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Biotech Devs. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </body>
 </html>
