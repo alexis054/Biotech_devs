@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biotech Devs | Soluciones Bio-Tecnológicas</title>
+    <title>Biotech Devs | Innovación Tecnológica</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- AOS (Animate On Scroll) -->
@@ -14,87 +14,102 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Fondo dinámico con conexiones neuronales -->
-    <div class="neural-background"></div>
-
-    <!-- Navegación flotante -->
-    <nav class="hologram-nav">
-        <ul>
-            <li><a href="#hero" class="nav-glow">Inicio</a></li>
-            <li><a href="#skills" class="nav-glow">Habilidades</a></li>
-            <li><a href="#projects" class="nav-glow">Proyectos</a></li>
-            <li><a href="#contact" class="nav-glow">Contacto</a></li>
-        </ul>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero" class="logo">Biotech Devs</a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Sección Hero con efecto de laboratorio -->
-    <section id="hero" class="lab-hero">
-        <div class="dna-container" data-aos="dna-animation">
-            <div class="dna-strand"></div>
-            <h1 class="holographic-title">BIOTECH DEVS</h1>
-            <p class="molecule-subtitle">Innovación en cada código</p>
+    <!-- Sección Hero -->
+    <section id="hero" class="hero-section">
+        <div class="container" data-aos="fade-up">
+            <h1>Innovación en Bioingeniería y Tecnología</h1>
+            <p>Soluciones integrales para proyectos de hardware y software.</p>
+            <a href="#contact" class="btn-primary">Contactanos</a>
         </div>
     </section>
 
-    <!-- Tarjetas de habilidades con efecto de interfaz holográfica -->
-    <section id="skills" class="hologram-section">
-        <div class="grid-skills">
-            <div class="hologram-card" data-aos="zoom-in">
-                <div class="card-content">
-                    <i class="fas fa-dna"></i>
-                    <h3>Bioingeniería</h3>
-                    <ul class="tech-list">
-                        <li>Análisis de señales</li>
-                        <li>MATLAB</li>
-                        <li>Simulaciones</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Repetir para otras tarjetas -->
+    <!-- Sobre Nosotros -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Sobre Nosotros</h2>
+            <p data-aos="fade-up">
+                Somos un equipo de bioingenieros especializados en el desarrollo de soluciones tecnológicas innovadoras. Combinamos electrónica, programación y diseño para crear proyectos que marcan la diferencia.
+            </p>
         </div>
     </section>
 
-    <!-- Portafolio interactivo con efecto de microscopio -->
-    <section id="projects" class="microscope-section">
-        <h2 data-aos="fade-up">Nuestros desarrollos</h2>
-        <div class="project-slider">
-            <div class="slide" data-project="1">
-                <div class="project-details">
-                    <h3>Sistema de monitoreo GSR</h3>
-                    <p>ESP32</p>
-                    <button class="holo-button">Ver caso de estudio</button>
+    <!-- Habilidades -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Nuestras Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="zoom-in">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Hardware Embebido</h3>
+                    <p>ESP32, Raspberry Pi, Arduino.</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in">
+                    <i class="fas fa-code"></i>
+                    <h3>Desarrollo de Software</h3>
+                    <p>Python, C++, Java, Node.js.</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in">
+                    <i class="fas fa-cube"></i>
+                    <h3>Prototipado 3D</h3>
+                    <p>Diseño, simulación e impresión.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Formulario de contacto estilo terminal -->
-    <section id="contact" class="terminal-section">
-        <div class="console-container" data-aos="fade-up">
-            <div class="terminal-header">
-                <span class="blinking-cursor">>_</span>
-                <h2>contacto@biotechdevs.com</h2>
+    <!-- Proyectos -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <img src="assets/images/project1.jpg" alt="Proyecto 1">
+                    <h3>Monitoreo Biométrico</h3>
+                    <p>Sistema de monitoreo en tiempo real con ESP32.</p>
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <img src="assets/images/project2.jpg" alt="Proyecto 2">
+                    <h3>Análisis de Señales</h3>
+                    <p>Software para análisis de datos biomédicos.</p>
+                </div>
             </div>
-            <form id="contactForm" class="terminal-form">
-                <div class="input-line">
-                    <span class="prompt">$</span>
-                    <input type="text" placeholder="Nombre" class="terminal-input">
-                </div>
-                <div class="input-line">
-                    <span class="prompt">$</span>
-                    <input type="email" placeholder="Email" class="terminal-input">
-                </div>
-                <div class="input-line">
-                    <span class="prompt">$</span>
-                    <textarea placeholder="Mensaje" class="terminal-textarea"></textarea>
-                </div>
-                <button type="submit" class="execute-button">Ejecutar</button>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 data-aos="fade-up">Contacto</h2>
+            <form id="contactForm" data-aos="fade-up">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo Electrónico" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit" class="btn-primary">Enviar</button>
             </form>
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Biotech Devs. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
