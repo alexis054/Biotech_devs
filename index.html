@@ -26,8 +26,9 @@
         </div>
     </nav>
 
-    <!-- Sección Hero -->
+    <!-- Sección Hero con particles.js -->
     <section id="hero" class="hero-section">
+        <div id="particles-js"></div>
         <div class="container" data-aos="fade-up">
             <h1>Innovación en Bioingeniería y Tecnología</h1>
             <p>Soluciones integrales para proyectos de hardware y software.</p>
@@ -88,41 +89,6 @@
         </div>
     </section>
 
-    <!-- Proyectos Dinámicos (oculto inicialmente) -->
-    <section id="projects" class="projects-section" style="display: none;">
-        <div class="container">
-            <button class="btn-back" onclick="hideProjects()">← Volver</button>
-            <h2>Proyectos Relacionados</h2>
-            <div class="projects-grid">
-                <!-- Proyectos de Hardware -->
-                <div class="project-card" data-category="hardware">
-                    <img src="assets/images/hardware1.jpg" alt="Sistema IoT">
-                    <h3>Sistema IoT Industrial</h3>
-                    <p>Control remoto con ESP32 y sensores personalizados.</p>
-                </div>
-                <div class="project-card" data-category="hardware">
-                    <img src="assets/images/hardware2.jpg" alt="Robot Autónomo">
-                    <h3>Robot de Monitoreo</h3>
-                    <p>Plataforma robótica basada en Raspberry Pi.</p>
-                </div>
-
-                <!-- Proyectos de Software -->
-                <div class="project-card" data-category="software">
-                    <img src="assets/images/software1.jpg" alt="Análisis de Datos">
-                    <h3>Plataforma de Analytics</h3>
-                    <p>Sistema de análisis biométrico en Python.</p>
-                </div>
-
-                <!-- Proyectos de Prototipado -->
-                <div class="project-card" data-category="prototipado">
-                    <img src="assets/images/3d1.jpg" alt="Prótesis 3D">
-                    <h3>Prótesis Personalizada</h3>
-                    <p>Diseño e impresión 3D de prótesis médica.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contacto -->
     <section id="contact" class="contact-section">
         <div class="container">
@@ -144,6 +110,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
