@@ -11,6 +11,28 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('Partículas cargadas correctamente.');
     });
 
+    // Ajustar el canvas de particles.js para que ocupe toda la sección del hero
+    const particlesCanvas = document.querySelector('#particles-js canvas');
+    if (particlesCanvas) {
+        particlesCanvas.style.position = 'absolute';
+        particlesCanvas.style.top = '0';
+        particlesCanvas.style.left = '0';
+        particlesCanvas.style.width = '100%';
+        particlesCanvas.style.height = '100%';
+    }
+
+    AOS.init({
+        duration: 1000,
+        once: true,
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('Partículas cargadas correctamente.');
+    });
+
     AOS.init({
         duration: 1000,
         once: true,
@@ -51,3 +73,6 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
     e.preventDefault();
     alert('Gracias por contactarnos. Nos pondremos en contacto contigo pronto.');
 });
+
+
+
