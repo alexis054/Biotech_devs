@@ -6,6 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('Partículas cargadas correctamente.');
+    });
+
+    AOS.init({
+        duration: 1000,
+        once: true,
+    });
+});
+
 // Filtrado de proyectos
 document.querySelectorAll('.skill-card').forEach(card => {
     card.addEventListener('click', function() {
